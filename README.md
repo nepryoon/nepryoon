@@ -28,5 +28,5 @@ Code: https://github.com/nepryoon/nil-forecast-studio
 CI/CD for ML · Model Serving · Inference Scaling · Feature Engineering · Feature Stores · MLflow · Docker · Evaluation Harness · RAG · LLMOps · Observability · Reproducibility
 
 ## Contact
-- LinkedIn: (add your LinkedIn)
-- Email: (add a professional email)
+- LinkedIn: https://www.linkedin.com/in/nepryoon/
+- Email: neuromorphicinference@gmail.com
