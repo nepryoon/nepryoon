@@ -1,16 +1,29 @@
-## Hi there 👋
+# Neuromorphic Inference Lab (Dublin)
 
-<!--
-**nepryoon/nepryoon** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build **production-grade ML systems** end-to-end: **data → features → training → artefacts → serving → evaluation → monitoring**.  
+Focus: **MLOps**, **LLMOps (RAG)**, and **reproducible forecasting**. Based in **Dublin**.
 
-Here are some ideas to get you started:
+## Featured systems (start here)
+- **Site (front door):** https://www.neuromorphicinference.com/
+- **Systems hub:** https://www.neuromorphicinference.com/demos/
+- **Proof Ledger (skill → evidence):** https://www.neuromorphicinference.com/evidence/
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Hero projects
+### MV Grid Fault Risk Scoring Platform
+End-to-end risk inference for medium-voltage networks: feature engineering, tracked training, artefact versioning, API serving, and demo UI.  
+Docs: https://www.neuromorphicinference.com/demos/mv-grid-fault-risk/
+
+### RAG Knowledge Copilot (LLMOps)
+Grounded drafting with retrieval traceability, citations, guardrails, and an evaluation harness for regression testing.  
+Docs: https://www.neuromorphicinference.com/demos/rag-copilot/
+
+### Forecast Studio
+Forecasting system built to escape the notebook trap: validation, backtesting, reproducibility, and artefacts suitable for stakeholders.  
+Docs: https://www.neuromorphicinference.com/demos/forecast-studio/
+
+## Keywords (ATS-friendly)
+CI/CD for ML · Model Serving · Inference · Feature Engineering · Feature Stores · MLflow · Docker · Evaluation Harness · RAG · LLMOps · Observability
+
+## Contact
+- LinkedIn: (add your LinkedIn)
+- Email: (add a professional email)
