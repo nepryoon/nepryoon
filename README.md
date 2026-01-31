@@ -24,7 +24,7 @@ Forecasting system with validation, backtesting, reproducibility, and memo-style
 Docs: https://www.neuromorphicinference.com/demos/forecast-studio/  
 Code: https://github.com/nepryoon/nil-forecast-studio
 
-## Keywords (ATS-friendly)
+## Keywords
 CI/CD for ML · Model Serving · Inference Scaling · Feature Engineering · Feature Stores · MLflow · Docker · Evaluation Harness · RAG · LLMOps · Observability · Reproducibility
 
 ## Contact
