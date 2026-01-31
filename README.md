@@ -1,7 +1,7 @@
-# Neuromorphic Inference Lab — Dublin
+# Neuromorphic Inference Lab
 
 I build **production-grade ML systems** end-to-end: **data → features → training → artefacts → serving → evaluation → monitoring**.  
-Focus: **MLOps**, **LLMOps (RAG)**, and **reproducible forecasting**. Based in **Dublin**.
+Focus: **MLOps**, **LLMOps (RAG)**, and **reproducible forecasting**
 
 ## Start here (live)
 - **Site:** https://www.neuromorphicinference.com/
