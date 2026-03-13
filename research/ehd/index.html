@@ -1,0 +1,308 @@
+<!-- /research/ehd/index.html -->
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EHD — Can LLM Agents Care About the World?</title>
+  <meta name="description" content="Exocentric Homeostatic Deliberation (EHD): a framework in which a persistent LLM agent's primary welfare term is anchored to an externally monitored, auditable world-state." />
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="/style.css" />
+
+  <style>
+    :root{
+      --line: rgba(234,240,255,.12);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+              "Liberation Mono","Courier New", monospace;
+    }
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      font-size:13px;
+      color:var(--muted);
+      margin:0 0 18px;
+    }
+    .breadcrumb a{
+      color:var(--a1);
+    }
+    .breadcrumb a:hover{
+      text-decoration:underline;
+    }
+    .breadcrumb-sep{
+      color:var(--muted);
+      opacity:.55;
+    }
+    .status-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:6px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:700;
+      background:rgba(245,158,11,.15);
+      border:1px solid rgba(245,158,11,.40);
+      color:rgba(255,255,255,.95);
+      letter-spacing:.03em;
+    }
+    .abstract-block{
+      border-left:3px solid var(--a1);
+      padding:14px 16px;
+      background:rgba(110,231,255,.04);
+      border-radius:0 12px 12px 0;
+      color:var(--muted);
+      line-height:1.75;
+      margin:14px 0;
+      font-size:15px;
+    }
+    .btn[aria-disabled="true"]{
+      opacity:.45;
+      cursor:not-allowed;
+    }
+    .btn[aria-disabled="true"]:hover{
+      transform:none;
+      background:rgba(255,255,255,.06);
+      border-color:rgba(255,255,255,.14);
+    }
+    .sim-cards{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+      margin:14px 0;
+    }
+    @media (max-width:860px){
+      .sim-cards{grid-template-columns:1fr;}
+    }
+    .sim-card{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:16px;
+      background:linear-gradient(180deg,var(--card),rgba(255,255,255,.03));
+      box-shadow:var(--shadow);
+    }
+    .sim-card h3{
+      margin:0 0 8px;
+      font-size:15px;
+      letter-spacing:.1px;
+      color:var(--txt);
+    }
+    .sim-card p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.65;
+      font-size:14px;
+    }
+    .results-table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:14px;
+    }
+    .results-table th,
+    .results-table td{
+      text-align:left;
+      padding:10px 14px;
+      border-bottom:1px solid var(--border);
+    }
+    .results-table th{
+      color:var(--muted);
+      font-weight:700;
+      font-size:12px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+    }
+    .results-table td:first-child{
+      white-space:nowrap;
+      color:var(--a2);
+      font-family:var(--mono);
+      font-size:13px;
+    }
+    .results-table tr:last-child td{
+      border-bottom:none;
+    }
+    .run-link{
+      font-size:14px;
+      color:var(--a1);
+      display:inline-flex;
+      align-items:center;
+      gap:4px;
+    }
+    .run-link:hover{
+      text-decoration:underline;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="inner">
+      <div class="brand">
+        <img src="/logo.svg" alt="Neuromorphic Inference Lab" />
+        <span>Neuromorphic Inference Lab</span>
+      </div>
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a data-nav href="/">Home</a>
+        <a data-nav href="/demos/">Demos</a>
+        <a data-nav href="/evidence/">Evidence</a>
+        <a data-nav href="/about/">About</a>
+        <a data-nav href="/research/" class="active">Research</a>
+        <a data-nav href="https://github.com/nepryoon" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/research/">Research</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span aria-current="page">EHD Paper</span>
+    </nav>
+
+    <!-- Paper section -->
+    <section class="section" id="paper" aria-labelledby="paper-heading">
+      <h2 id="paper-heading">Paper</h2>
+
+      <div class="card col-12">
+        <h1 style="font-size:clamp(18px,2.2vw,26px);line-height:1.25;margin:0 0 10px;">
+          Can LLM Agents Care About the World? World-Directed Welfare and Exocentric Homeostatic Deliberation
+        </h1>
+
+        <p style="color:var(--muted);margin:0 0 12px;font-size:14px;">
+          Luca Lillo, MSc Data Science and AI, University of Liverpool, 2026
+        </p>
+
+        <div style="margin:0 0 14px;">
+          <span class="status-badge">arXiv preprint — under submission</span>
+        </div>
+
+        <blockquote class="abstract-block">
+          This paper introduces exocentric homeostatic deliberation
+          (EHD): a framework in which a persistent LLM agent's primary
+          welfare term is anchored to an externally monitored, auditable
+          world-state rather than to internal comfort variables. The
+          hope term is defined over an interventional distribution
+          under explicit structural-causal modelling assumptions.
+          Pragmatic and epistemic value enter the scoring rule as
+          independently calibrated additive terms. Governance is handled
+          through hard feasibility constraints and a soft penalty term,
+          both inspectable without access to internal operational
+          variables.
+        </blockquote>
+
+        <div class="actions">
+          <a class="btn primary"
+             href="#"
+             aria-disabled="true"
+             title="Link will be active upon arXiv submission"
+             tabindex="-1">
+            View on arXiv →
+          </a>
+          <a class="btn"
+             href="https://github.com/nepryoon/ehd-simulations"
+             target="_blank"
+             rel="noopener">
+            Simulation Code →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simulations section -->
+    <section class="section" id="simulations" aria-labelledby="simulations-heading">
+      <h2 id="simulations-heading">Simulations</h2>
+      <p class="lead">Reproducible figures from the paper</p>
+
+      <div class="sim-cards">
+        <article class="sim-card">
+          <h3>Proposition 4: Recalibration Convergence</h3>
+          <p>
+            50 independent Robbins-Monro trajectories
+            converging to the true interventional mean μ*(a)=0.35
+            from initial estimate 0.60.
+          </p>
+        </article>
+
+        <article class="sim-card">
+          <h3>Proposition 5: EHD vs EFE Ranking Divergence</h3>
+          <p>
+            Actions with equal predicted means but
+            differing variances receive identical EHD pragmatic scores
+            but different EFE KL scores — a restricted existence result.
+          </p>
+        </article>
+
+        <article class="sim-card">
+          <h3>Section 7: 24-Month Welfare Trajectory</h3>
+          <p>
+            EHD agent operating on an AMR-style
+            monitoring task. Exocentric trigger fires at
+            W_ext &lt; θ_ext = 0.45 despite satisfactory internal
+            operational state.
+          </p>
+        </article>
+      </div>
+
+      <p style="margin-top:4px;">
+        <a class="run-link"
+           href="https://github.com/nepryoon/ehd-simulations"
+           target="_blank"
+           rel="noopener">
+          Run simulations locally →
+        </a>
+      </p>
+    </section>
+
+    <!-- Formal results section -->
+    <section class="section" id="formal-results" aria-labelledby="formal-results-heading">
+      <h2 id="formal-results-heading">Formal results</h2>
+
+      <div class="card col-12" style="padding:0;overflow:hidden;">
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th scope="col">Result</th>
+              <th scope="col">Statement</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Proposition 1</td>
+              <td>State boundedness</td>
+            </tr>
+            <tr>
+              <td>Proposition 2</td>
+              <td>Monotone passive degradation</td>
+            </tr>
+            <tr>
+              <td>Design Principle 1</td>
+              <td>Governance-transparent attribution</td>
+            </tr>
+            <tr>
+              <td>Proposition 4</td>
+              <td>Robbins-Monro consistency</td>
+            </tr>
+            <tr>
+              <td>Proposition 5</td>
+              <td>Restricted EFE ranking non-equivalence</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© 2026 Neuromorphic Inference Lab</div>
+      <div class="prov">
+        <span id="build-branch">branch: …</span>
+        <span id="build-commit">commit: …</span>
+        <span id="build-time">built: …</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/build-info.js" defer></script>
+</body>
+</html>
