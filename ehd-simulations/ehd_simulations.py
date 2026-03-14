@@ -194,6 +194,103 @@ def fig_welfare_trajectory(rng: np.random.Generator, months: int = 24) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Figure 2 — KL divergence vs variance (fixed: use variance, not std dev)
+# ---------------------------------------------------------------------------
+def generate_fig2() -> None:
+    """
+    Figure 2 — KL divergence between two zero-mean Gaussians as a function of σ²_b.
+
+    Fix applied: the KL formula requires variance, so we use
+        sigma2_star = 0.03**2  (= 0.0009)
+    and reference it directly in the formula rather than squaring sigma_star inside.
+    σ²_b is swept over [0.001, 0.008] so that KL values stay between 0 and 5.
+    """
+    sigma2_star = 0.03 ** 2                          # variance σ²* = 0.03² = 0.0009
+    sigma2_b_vals = np.linspace(0.001, 0.008, 100)  # sweep range keeps KL in [0, 5]
+    sigma2_a = 0.001
+
+    # KL( N(0, σ²_a) ‖ N(0, σ²_b) ) = ½ (σ²_a/σ²_b + log(σ²_b/σ²_a) − 1)
+    kl_vals = 0.5 * (sigma2_a / sigma2_b_vals + np.log(sigma2_b_vals / sigma2_a) - 1)
+
+    fig, ax = plt.subplots(figsize=(7, 4))
+    ax.plot(sigma2_b_vals, kl_vals, color="steelblue", linewidth=2.0,
+            label="KL divergence")
+    ax.axvline(sigma2_star, color="tomato", linestyle="--", linewidth=1.4,
+               label=rf"$\sigma^2_* = {sigma2_star}$")
+    ax.set_xlabel(r"$\sigma^2_b$", fontsize=12)
+    ax.set_ylabel("KL divergence", fontsize=12)
+    ax.set_title("KL Divergence vs Variance\n(Figure 2, Proposition 5)",
+                 fontsize=12)
+    ax.legend(fontsize=10)
+    ax.grid(True, linestyle=":", alpha=0.5)
+    fig.tight_layout()
+    save_figure(fig, "fig2_kl_divergence")
+
+
+# ---------------------------------------------------------------------------
+# Figure 3 — 24-month welfare + smooth hope-term decay
+# ---------------------------------------------------------------------------
+def generate_fig3(rng: np.random.Generator, months: int = 24) -> None:
+    """
+    Figure 3 — 24-month welfare trajectory with a smoothly decaying hope term.
+
+    Fix applied: the hope term B_t now decays via an exponential rather than
+    crashing abruptly below W_ext:
+        t < 3   : B[i] = W_ext[i]
+        t == 3  : B[i] = 0.62
+        3 < t < 20: B[i] = W_ext[i] + 0.15 * exp(−0.15*(t−3))
+        t >= 20 : B[i] = W_ext[i] + 0.02
+    This better reflects the paper's description of hope decaying when evidence
+    fails to confirm the forecast.
+    """
+    theta_star = 1.0
+    band = 0.15
+    dt = 1.0
+    sigma = 0.12
+
+    t_vals = np.arange(months)
+
+    # External welfare signal (passive baseline with downward drift)
+    W_ext = np.zeros(months)
+    W_ext[0] = theta_star
+    for i in range(1, months):
+        W_ext[i] = W_ext[i - 1] - 0.02 * dt + rng.normal(0, sigma)
+
+    # EHD belief / hope signal B_t with smooth decay
+    B = np.zeros(months)
+    for i in range(months):
+        ti = float(i)
+        if ti < 3:
+            B[i] = W_ext[i]
+        elif ti == 3:
+            B[i] = 0.62
+        elif 3 < ti < 20:
+            B[i] = W_ext[i] + 0.15 * np.exp(-0.15 * (ti - 3))
+        else:  # ti >= 20
+            B[i] = W_ext[i] + 0.02
+
+    fig, ax = plt.subplots(figsize=(9, 4))
+    ax.plot(t_vals, B, color="steelblue", linewidth=2.0, label=r"EHD belief $B_t$")
+    ax.plot(t_vals, W_ext, color="tomato", linewidth=1.5, linestyle="--",
+            label=r"External welfare $W_{\mathrm{ext}}$")
+    ax.axhline(theta_star, color="black", linewidth=0.8, linestyle=":")
+    ax.axhline(theta_star + band, color="steelblue", linewidth=0.6,
+               linestyle=":", alpha=0.5, label="Homeostatic band")
+    ax.axhline(theta_star - band, color="steelblue", linewidth=0.6,
+               linestyle=":", alpha=0.5)
+    ax.fill_between(t_vals, theta_star - band, theta_star + band,
+                    color="steelblue", alpha=0.07)
+    ax.set_xlabel("Month", fontsize=12)
+    ax.set_ylabel("Welfare / Belief", fontsize=12)
+    ax.set_title("24-Month EHD Welfare Simulation with Hope-Term Decay\n(Section 7)",
+                 fontsize=12)
+    ax.legend(fontsize=10)
+    ax.grid(True, linestyle=":", alpha=0.5)
+    fig.tight_layout()
+    save_figure(fig, "fig3_welfare_hope")
+
+
+# ---------------------------------------------------------------------------
 # Entry point
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
@@ -207,5 +304,11 @@ if __name__ == "__main__":
 
     print("Generating fig_welfare_trajectory …")
     fig_welfare_trajectory(rng)
+
+    print("Generating fig2 (KL divergence, variance-corrected) …")
+    generate_fig2()
+
+    print("Generating fig3 (welfare + smooth hope-term decay) …")
+    generate_fig3(rng)
 
     print("\nDone. All figures saved to ./figures/")
