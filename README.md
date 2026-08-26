@@ -3,9 +3,9 @@
 **Enterprise AI & GenAI Solution Architect | LLM Multi-Agent Systems | Chief Technology Officer**  
 *Psychology-Informed Governance | Evidence-Led Evaluation*
 
-I design and govern enterprise AI systems where decisions must remain explainable, testable and accountable. I currently serve as **Chief Technology Officer at Sistemi & Automazione S.p.A.** and target **Enterprise AI and GenAI Solution Architect** roles.
+I design and govern enterprise AI systems where decisions must remain explainable, testable and accountable. I currently serve as **Chief Technology Officer** and target **Enterprise AI and GenAI Solution Architect** roles.
 
-My distinctive specialisation is the **architecture, governance and evaluation of LLM multi-agent systems**: how topology, role design, authority, information flow, dissent, verification and human oversight affect decision quality. My foundation includes eighteen years at Enel Group across enterprise technology, electricity-distribution systems, transformation, programme delivery and capability development; my dedicated AI specialisation is recent, chiefly from 2025.
+My distinctive specialisation is the **architecture, governance and evaluation of LLM multi-agent systems**: how topology, role design, authority, information flow, dissent, verification and human oversight affect decision quality. My foundation includes eighteen years at Enel Group across enterprise technology, electricity-distribution systems, transformation, programme delivery and capability development.
 
 ## Psychology + AI: an engineering lens for multi-agent systems
 
