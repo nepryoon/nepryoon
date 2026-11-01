@@ -1,11 +1,11 @@
 # Luca Lillo
 
 **Applied AI Engineer & Solution Architect | Ontology Engineering, Knowledge Graphs and Governed LLM Agents | AI Governance**  
-*Psychology-informed governance · Evidence-led evaluation*
+*Psychology-informed modelling and governance · Evidence-led evaluation*
 
 I design and build AI systems where decisions must stay explainable, testable and accountable: LLM agents, retrieval-augmented generation (RAG), knowledge graphs and ontologies, with human oversight built in from the start. My core technical focus is ontology engineering: I model domains as ontologies and knowledge graphs, and I build AI agents that use that data only through typed, governed queries and tools.
 
-I have almost 20 years of experience, 18 of them at Enel Group, and I have led teams since 2008. From June to September 2026 I was Chief Technology Officer and Head of Research and Innovation at Sistemi & Automazione. Today I run Neuromorphic Inference Lab, my independent open-source initiative, and I am studying for an MSc in Artificial Intelligence at the University of Liverpool.
+I have almost 20 years of experience, 18 of them at Enel Group, and I have led teams since 2008. From June to September 2026 I was Chief Technology Officer and Head of Research and Innovation at Sistemi & Automazione. Today I run Neuromorphic Inference Lab, my independent open-source initiative. At the University of Liverpool I hold a Postgraduate Certificate in Data Science and Artificial Intelligence, and I am studying for an MSc in Artificial Intelligence.
 
 I am looking for Applied AI Engineer, AI Solution Architect, knowledge-graph and AI deployment roles.  
 **Based in Rome, Italy · Italian (EU) citizen · available immediately · open to relocation within the EU**
@@ -22,7 +22,7 @@ I am looking for Applied AI Engineer, AI Solution Architect, knowledge-graph and
 
 ### [OCOR](https://github.com/nepryoon/ocor-detailed-design)
 
-In development: a runnable implementation on a wholly synthetic scenario, with qualification in progress. OCOR is a sovereign, vendor-neutral semantic core. It connects ontology definitions, evidence, governed decisions and controlled actions, so that software and AI agents work against explicit contracts and authority limits.
+A runnable implementation on a wholly synthetic scenario, with qualification in progress. OCOR is a sovereign, vendor-neutral semantic core. It connects ontology definitions, evidence, governed decisions and controlled actions, so that software and AI agents work against explicit contracts and authority limits.
 
 - **Designed:** an ontology-as-code metamodel, with modules and imports pinned by version and digest, typed objects and interfaces, n-ary links with named roles, constraints, bitemporal data, security markings, and contracts for named queries, functions, actions, events and MCP tools.
 - **Built:** the ontology compiler. It type-checks YAML or JSON ontology sources, rejects unresolved or cyclic references, and turns each release into a deterministic, content-addressed canonical model. Every release gets a semantic diff and a compatibility class (identical, compatible, breaking); a breaking release is rejected without a migration plan.
@@ -62,9 +62,13 @@ An open-source ML application: fault-risk scoring for medium-voltage lines, with
 
 A formal control framework in which an LLM agent judges improvement or deterioration from an external, auditable indicator. Theoretical preprint with public [simulation code](https://github.com/nepryoon/ehd-simulations); not peer reviewed. [ResearchGate, DOI 10.13140/RG.2.2.25820.55685](https://doi.org/10.13140/RG.2.2.25820.55685)
 
-## Psychology + AI: an engineering lens for multi-agent systems
+## Psychology + AI: an engineering lens for ontologies and multi-agent systems
 
-Formal training in Psychological Sciences gives me a complementary, non-anthropomorphic lens on authority bias, conformity, groupthink, social loafing and confidence dominance. I do not assume that LLM agents have human motives. I translate these concepts into observable failure hypotheses, structural controls and evaluation designs.
+Formal training in Psychological Sciences shapes two parts of my work.
+
+**Ontologies.** An ontology is a model of how people divide a domain into concepts. Psychology helps me with the human side of that model: how people form categories, why two teams give different meanings to the same word, and how to check that different people apply a definition in the same way.
+
+**Multi-agent systems.** Psychology gives me a complementary, non-anthropomorphic lens on authority bias, conformity, groupthink, social loafing and confidence dominance. I do not assume that LLM agents have human motives. I translate these concepts into observable failure hypotheses, structural controls and evaluation designs.
 
 The designs I have proposed, all testable, cover:
 
@@ -94,7 +98,7 @@ This work currently supports conceptual architecture and evaluation design. Prop
 - **Chief Technology Officer & Head of Research and Innovation**, Sistemi & Automazione S.p.A., Rome — June 2026 – September 2026.
 - **E-Distribuzione S.p.A. (Enel Group)** — May 2008 – June 2026: Head of Training Unit; Senior Project Manager | Digital Transformation Lead (monitored Grid Blue Sky, Enel Grids' global digitalisation programme); Innovation & Agile Ambassador | Senior System Designer; Project Manager.
 - **MSc Artificial Intelligence**, University of Liverpool — in progress, expected August 2027; current average in the Distinction band.
-- **Postgraduate Certificate in Data Science and Artificial Intelligence**, University of Liverpool — academic requirements completed; formal award pending.
+- **Postgraduate Certificate in Data Science and Artificial Intelligence**, University of Liverpool — awarded.
 - **MSc Management and Innovation (LM-77)**, Universitas Mercatorum.
 - **BSc Psychological Sciences and Techniques**, Universitas Mercatorum.
 
