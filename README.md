@@ -5,7 +5,7 @@
 
 I design and build AI systems where decisions must stay explainable, testable and accountable: LLM agents, retrieval-augmented generation (RAG), knowledge graphs and ontologies, with human oversight built in from the start. My core technical focus is ontology engineering: I model domains as ontologies and knowledge graphs, and I build AI agents that use that data only through typed, governed queries and tools.
 
-I have almost 20 years of experience, 18 of them at Enel Group, and I have led teams since 2008. From June to September 2026 I was Chief Technology Officer and Head of Research and Innovation at Sistemi & Automazione. Today I run Neuromorphic Inference Lab, my independent open-source initiative. At the University of Liverpool I hold a Postgraduate Certificate in Data Science and Artificial Intelligence, and I am studying for an MSc in Artificial Intelligence.
+I have almost 20 years of experience, 18 of them at Enel Group, and I have led teams since 2007. From June to September 2026 I was Chief Technology Officer and Head of Research and Innovation at Sistemi & Automazione. Today I run Neuromorphic Inference Lab, my independent open-source initiative. At the University of Liverpool I hold a Postgraduate Certificate in Data Science and Artificial Intelligence, and I am studying for an MSc in Artificial Intelligence.
 
 I am looking for Applied AI Engineer, AI Solution Architect, knowledge-graph and AI deployment roles.  
 **Based in Rome, Italy · Italian (EU) citizen · available immediately · open to relocation within the EU**
@@ -14,7 +14,7 @@ I am looking for Applied AI Engineer, AI Solution Architect, knowledge-graph and
 
 - **Machine learning in production (Enel Group, 2017–2023).** In a six-person Agile team, I co-built and maintained for six years a machine learning platform in production on AWS for predictive maintenance and investment targeting, from requirements to production, adoption and ongoing operation. I selected Databricks, personally developed the platform's entire ETL layer (Apache Spark, SQL, Python) and did the modelling: feature selection, XGBoost training and evaluation, and thresholds for operational use. The platform contributed to reducing average customer interruption minutes by up to 30% in some territories (internal before-and-after measure).
 - **Platforms in production, managed as CTO (2026).** I managed two platforms in production: a graph-analysis platform with a multi-agent tool that users could query about the graph data, and a due-diligence platform with about 60 connectors to different data sources. I handled their production issues end to end. Both platforms existed before I joined.
-- **AI governance (2026).** As CTO, I authored the company AI policy (EU AI Act, GDPR and Italian Law 132/2025, prepared with a view to ISO/IEC 42001 certification): risk-based classification of AI use, human oversight and graduated autonomy levels for AI agents. I also authored the guidelines for AI-assisted software development, translating recent academic literature into controls for requirements, testing, traceability and validation.
+- **AI governance (2026).** As CTO, I authored the company AI policy (EU AI Act, GDPR and Italian Law 132/2025, prepared with a view to ISO/IEC 42001 certification): risk-based classification of AI use, human oversight and graduated autonomy levels for AI agents. I also authored the guidelines for AI-assisted software development, translating recent academic literature into controls for requirements, testing, traceability and validation, and led their adoption with HR.
 - **Multi-agent architecture (2026, design stage).** I defined the architecture of a cloud-native graph-intelligence platform: multi-agent AI over an ontology layer and knowledge graph, agents under human supervision, EU AI Act, GDPR and data-sovereignty requirements, and a verification plan set before development.
 - **Teams and capability.** As CTO, I established the technology function (5 direct and 15 functional reports). At Enel, I created the unit that trains a technical organisation of 1,500 people; at the end of 2025 it ranked first of the 12 training units in Italy for training hours per person.
 
@@ -22,7 +22,7 @@ I am looking for Applied AI Engineer, AI Solution Architect, knowledge-graph and
 
 ### [OCOR](https://github.com/nepryoon/ocor-detailed-design)
 
-A runnable implementation on a wholly synthetic scenario, with qualification in progress. OCOR is a sovereign, vendor-neutral semantic core. It connects ontology definitions, evidence, governed decisions and controlled actions, so that software and AI agents work against explicit contracts and authority limits.
+In development: a runnable implementation on a wholly synthetic scenario, with qualification in progress. OCOR is a sovereign, vendor-neutral semantic core. It connects ontology definitions, evidence, governed decisions and controlled actions, so that software and AI agents work against explicit contracts and authority limits.
 
 - **Designed:** an ontology-as-code metamodel, with modules and imports pinned by version and digest, typed objects and interfaces, n-ary links with named roles, constraints, bitemporal data, security markings, and contracts for named queries, functions, actions, events and MCP tools.
 - **Built:** the ontology compiler. It type-checks YAML or JSON ontology sources, rejects unresolved or cyclic references, and turns each release into a deterministic, content-addressed canonical model. Every release gets a semantic diff and a compatibility class (identical, compatible, breaking); a breaking release is rejected without a migration plan.
@@ -96,7 +96,8 @@ This work currently supports conceptual architecture and evaluation design. Prop
 ## Background
 
 - **Chief Technology Officer & Head of Research and Innovation**, Sistemi & Automazione S.p.A., Rome — June 2026 – September 2026.
-- **E-Distribuzione S.p.A. (Enel Group)** — May 2008 – June 2026: Head of Training Unit; Senior Project Manager | Digital Transformation Lead (monitored Grid Blue Sky, Enel Grids' global digitalisation programme); Innovation & Agile Ambassador | Senior System Designer; Project Manager.
+- **E-Distribuzione S.p.A. (Enel Group)** — May 2008 – June 2026: Head of Training Unit & Trainer; Senior Project Manager & Digital Transformation Lead (monitored Grid Blue Sky, Enel Grids' global digitalisation programme); Innovation & Agile Ambassador | Senior System Designer; Technical Project Manager.
+- **Junior Production Manager**, VRM — April 2007 – April 2008: production of aluminium chassis and engine components for motorcycles and cars; configuration of CNC machines and robots.
 - **MSc Artificial Intelligence**, University of Liverpool — in progress, expected August 2027; current average in the Distinction band.
 - **Postgraduate Certificate in Data Science and Artificial Intelligence**, University of Liverpool — awarded.
 - **MSc Management and Innovation (LM-77)**, Universitas Mercatorum.
