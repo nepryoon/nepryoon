@@ -4,7 +4,7 @@
 
 ## About
 
-This repository contains the simulation code for the arXiv paper proposing **Exocentric Homeostatic Deliberation (EHD)**, a framework for world-directed welfare in persistent LLM agents. EHD extends active-inference-style planning by grounding deliberation in exocentric (other-directed) homeostatic set-points, enabling agents to reason about and maintain the well-being of external systems — not merely their own internal states. Full details and theoretical derivations are available at [neuromorphicinference.com/research/ehd/](https://www.neuromorphicinference.com/research/ehd/).
+This repository contains the simulation code for the theoretical preprint (not peer reviewed) proposing **Exocentric Homeostatic Deliberation (EHD)**, a framework for world-directed welfare in persistent LLM agents. EHD extends active-inference-style planning by grounding deliberation in exocentric (other-directed) homeostatic set-points, enabling agents to reason about and maintain the well-being of external systems — not merely their own internal states. Full details and theoretical derivations are available at [neuromorphicinference.com/research/ehd/](https://www.neuromorphicinference.com/research/ehd/).
 
 ## Figures
 
@@ -30,7 +30,8 @@ Figures are saved as PDF and PNG in `./figures/`.
   author = {Luca Lillo},
   title  = {Can LLM Agents Care About the World?},
   year   = {2026},
-  note   = {arXiv preprint}
+  note   = {Preprint, not peer reviewed},
+  doi    = {10.13140/RG.2.2.25820.55685}
 }
 ```
 
